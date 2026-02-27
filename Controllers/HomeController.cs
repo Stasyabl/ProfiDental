@@ -18,14 +18,16 @@ namespace ProfiDental.Controllers
             return View();
         }
 
-        //public IActionResult Privacy()
-        //{
-        //    return this.View("~/Views/Privacy/Index.cshtml");
-        //}
-
+        [Route("Price")]
         public IActionResult Price()
         {
-            return this.View("~/Views/Price/Index.cshtml");
+            return this.View("/Views/Price/Index.cshtml");
+        }
+
+        [Route("Privacy")]
+        public IActionResult Privacy()
+        {
+            return this.View("/Views/Privacy/Index.cshtml");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
