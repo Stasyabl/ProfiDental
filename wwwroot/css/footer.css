@@ -1,0 +1,86 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #283d6c;
+    width: 100%;
+    padding: 50px 30px;
+}
+
+.upper-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.upper-footer__logo {
+    width: 160px;
+}
+
+.upper-footer__logo-img {
+    width: 100%;
+}
+
+.upper-footer__links {
+    display: flex;
+    min-width: 100px;
+    justify-content: center;
+    gap: 15px 30px;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    flex-wrap: wrap;
+    margin: 0;
+    text-align: center;
+}
+
+.upper-footer__links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__book-btn {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: white;
+    transition: .15s;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 4px;
+    text-wrap: wrap;
+}
+
+.footer__book-btn:hover {
+    background-color: white;
+    color: rgba(40, 61, 108, 1);
+}
+
+.footer__book-btn:active {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.lower-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1300px;
+    border-top: 1px white solid;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.lower-footer a,
+.lower-footer p {
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+p {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+svg {
+    overflow: visible;
+}
