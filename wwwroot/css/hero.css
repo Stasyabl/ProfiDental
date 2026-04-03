@@ -1,0 +1,112 @@
+.hero {
+    position: relative;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.slider {
+    height: 100%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    position: relative;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+.slider-nav {
+    display: flex;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    z-index: 1;
+    column-gap: 1rem;
+    transform: translateX(-50%);
+}
+
+.slider-nav a {
+    width: 1.7rem;
+    height: .3rem;
+    border-radius: 1rem;
+    background-color: white;
+    opacity: .6;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.overlay {
+    background-color: rgba(47, 85, 155, 0.384);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.hero-btns {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    column-gap: 20px;
+}
+
+.consultation-btn,
+.services-btn {
+    font-size: 25px;
+    padding: 15px 30px;
+    border-radius: 6px;
+    transition: .15s;
+}
+
+.consultation-btn {
+    background-color: white;
+    border: 1px solid white;
+    color: rgba(47, 85, 155);
+}
+
+.services-btn {
+    background-color: rgba(47, 85, 155);
+    border: 1px solid rgba(47, 85, 155);
+    color: white;
+}
+
+.consultation-btn:hover,
+.services-btn:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.consultation-btn:active,
+.services-btn:active {
+    background-color: transparent;
+    border: 1px solid darkblue;
+    color: white;
+}

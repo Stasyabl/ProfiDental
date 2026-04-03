@@ -1,0 +1,93 @@
+.contacts {
+    max-width: 1300px;
+    padding: 0 30px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.contacts__header {
+    color: #283d6c;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contacts__txt {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.cities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.vinnytsia {
+    border: 1px solid #283d6c;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.kyiv {
+    background-color: #eef0f3;
+    border: 1px solid #eef0f3;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.city__header {
+    color: #283d6c;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contacts-icons {
+    width: 20px;
+    height: 20px;
+}
+
+.contacts__address {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contacts__phone {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contacts__phone-numbers {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.contacts__phone--messengers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 30px;
+}
+
+.working-hours {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contacts__location {
+    margin-bottom: 20px;
+}
+
+.contacts__location iframe {
+    width: 100%;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}

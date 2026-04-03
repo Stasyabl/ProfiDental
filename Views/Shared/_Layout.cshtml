@@ -4,35 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profi Dental</title>
-    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/general.css">
+    <link rel="stylesheet" href="~/css/header.css">
+    <link rel="stylesheet" href="~/css/hero.css">
+    <link rel="stylesheet" href="~/css/about.css">
+    <link rel="stylesheet" href="~/css/why-choose.css">
+    <link rel="stylesheet" href="~/css/services.css">
+    <link rel="stylesheet" href="~/css/faq.css">
+    <link rel="stylesheet" href="~/css/results.css">
+    <link rel="stylesheet" href="~/css/contacts.css">
+    <link rel="stylesheet" href="~/css/footer.css">
+
+    <script src="scripts/script.js" defer></script>
     <script src="~/js/script.js"></script>
 </head>
 <body>
 
     <header>
-        <nav>
-
-            <ul class="sidebar">
-                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#0f0f0f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><a href="#">About the clinic</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Price</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-
-            <ul>
-                <li class="logo"><a href="#"><img src="images/logo.png"/></a></li>
-                <li class="hideOnMobile"><a href="#">About the clinic</a></li>
-                <li class="hideOnMobile"><a href="#">Services</a></li>
-                <li class="hideOnMobile"><a href="#">Price</a></li>
-                <li class="hideOnMobile"><a href="#">FAQ</a></li>
-                <li class="hideOnMobile"><a href="#">Contacts</a></li>
-                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns ="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#0f0f0f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-            </ul>
-
-        </nav>
+        <a class="logo" href="#"><img class="logo-img" src="images/logo.png"></a>
+        <div class="go-to hide-on-mobile">
+            <a>
+                About the Clinic
+            </a>
+            <a>
+                Services
+            </a>
+            <a>
+                Price
+            </a>
+            <a>
+                FAQ
+            </a>
+            <a>
+                Contacts
+            </a>
+        </div>
+        <div class="header-btns hide-on-mobile">
+            <button class="book-btn">
+                Book an Appointment
+            </button>
+            <button class="lang-btn">
+                EN
+            </button>
+        </div>
+        <button onclick="showSidebar()" class="hamburger-menu-btn">
+            <img src="images/svgs/hamburger.svg">
+        </button>
     </header>
+
+    <div class="sidebar">
+        <button onclick="hideSidebar()" class="close-btn">
+            <img src="images/svgs/close.svg">
+        </button>
+        <div class="sidebar-btns">
+            <a>
+                About the Clinic
+            </a>
+            <a>
+                Services
+            </a>
+            <a>
+                Price
+            </a>
+            <a>
+                FAQ
+            </a>
+            <a>
+                Contacts
+            </a>
+            <button class="book-btn">
+                Book an Appointment
+            </button>
+            <button class="lang-btn">
+                EN
+            </button>
+        </div>
+    </div>
 
     <div class="container">
         <main role="main">

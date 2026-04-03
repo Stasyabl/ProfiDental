@@ -1,0 +1,150 @@
+﻿header {
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+    background-color: rgba(40, 61, 108, 0.6);
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.logo {
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 70%;
+}
+
+.go-to {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 10px 25px;
+    padding: 0 20px;
+}
+
+    .go-to a {
+        color: white;
+        cursor: pointer;
+    }
+
+.header-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book-btn {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: white;
+    transition: .15s;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+    .book-btn:hover {
+        background-color: white;
+        color: rgba(40, 61, 108, 1);
+    }
+
+    .book-btn:active {
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+    }
+
+.lang-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.hamburger-menu-btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+    .hamburger-menu-btn img {
+        width: 35px;
+    }
+
+@media(max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .hamburger-menu-btn {
+        display: block;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 0 40px;
+        background-color: transparent;
+    }
+}
+
+.sidebar {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    /* align-items: center; */
+    padding-top: 80px;
+    background-color: rgb(45, 54, 125);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    font-size: 20px;
+    color: white;
+    gap: 30px;
+    z-index: 200;
+}
+
+.sidebar-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.sidebar a {
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: white;
+    transition: .5s;
+}
+
+    .close-btn:hover {
+        color: rgb(185, 185, 185);
+    }

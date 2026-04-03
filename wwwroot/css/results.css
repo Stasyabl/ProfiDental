@@ -1,0 +1,11 @@
+.results {
+    max-width: 1300px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.results__header {
+    color: #283d6c;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
