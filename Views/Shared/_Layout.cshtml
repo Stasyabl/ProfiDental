@@ -14,27 +14,29 @@
     <link rel="stylesheet" href="~/css/results.css">
     <link rel="stylesheet" href="~/css/contacts.css">
     <link rel="stylesheet" href="~/css/footer.css">
+    <link rel="stylesheet" href="~/css/privacy.css">
+    <link rel="stylesheet" href="~/css/price.css">
 
     <script src="~/js/script.js" defer></script>
 </head>
 <body>
 
     <header>
-        <a class="logo" href="#"><img class="logo-img" src="images/logo.png"></a>
+        <a class="logo" asp-controller="Home" asp-action="Index"><img class="logo-img" src="images/logo.png"></a>
         <div class="go-to hide-on-mobile">
-            <a>
+            <a href="#">
                 About the Clinic
             </a>
-            <a>
+            <a href="#">
                 Services
             </a>
-            <a>
+            <a asp-controller="Prices" asp-action="Price">
                 Price
             </a>
-            <a>
+            <a href="#">
                 FAQ
             </a>
-            <a>
+            <a href="#">
                 Contacts
             </a>
         </div>
@@ -56,19 +58,19 @@
             <img src="images/svgs/close.svg">
         </button>
         <div class="sidebar-btns">
-            <a>
+            <a href="#">
                 About the Clinic
             </a>
-            <a>
+            <a href="#">
                 Services
             </a>
-            <a>
+            <a asp-controller="Prices" asp-action="Price">
                 Price
             </a>
-            <a>
+            <a href="#">
                 FAQ
             </a>
-            <a>
+            <a href="#">
                 Contacts
             </a>
             <button class="book-btn">
@@ -85,6 +87,46 @@
             @RenderBody()
         </main>
     </div>
+
+    <footer>
+        <div class="upper-footer">
+            <a asp-controller="Home" asp-action="Index" class="upper-footer__logo">
+                <img class="upper-footer__logo-img" src="images/logo.png">
+            </a>
+            <div class="upper-footer__links">
+                <a asp-controller="Home" asp-action="Index">
+                    About the Clinic
+                </a>
+                <a href="#">
+                    Services
+                </a>
+                <a asp-controller="Prices" asp-action="Price">
+                    Price
+                </a>
+                <a href="#">
+                    FAQ
+                </a>
+                <a href="#">
+                    Contacts
+                </a>
+            </div>
+            <button class="footer__book-btn">
+                Book an Appointment
+            </button>
+        </div>
+        <div class="lower-footer">
+            <a asp-controller="Home" asp-action="Privacy">
+                Privacy Policy
+            </a>
+            <p>
+                Profi Dental © 2026 Vinnytsia.
+                All rights reserved
+            </p>
+            <p>
+                Created by <a href="#">Stanislav</a>
+            </p>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -3,7 +3,7 @@ footer {
     flex-direction: column;
     background-color: #283d6c;
     width: 100%;
-    padding: 50px 30px;
+    padding: 20px 30px;
 }
 
 .upper-footer {
@@ -19,6 +19,7 @@ footer {
 
 .upper-footer__logo {
     width: 160px;
+    cursor: pointer;
 }
 
 .upper-footer__logo-img {
@@ -69,7 +70,8 @@ footer {
 
 .lower-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     max-width: 1300px;
     border-top: 1px white solid;
@@ -77,6 +79,7 @@ footer {
     margin-top: 20px;
     padding-top: 20px;
     flex-wrap: wrap;
+    row-gap: 10px;
 }
 
 .lower-footer a,
