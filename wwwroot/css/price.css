@@ -1,0 +1,49 @@
+.price__page {
+    padding-top: 100px;
+}
+
+    .price__page h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #283d6c;
+    }
+
+    .price__page p {
+        line-height: 27px;
+    }
+
+.preiskurant {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin: 50px auto;
+}
+
+.preiskurant h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1ref;
+    border: 1px solid #bac4db;
+    margin: 0 30px;
+}
+
+.prices-and-services {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    font-size: 18px;
+    gap: 100px;
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.prices-and-services:nth-child(odd) {
+    background-color: #bac4db;
+}

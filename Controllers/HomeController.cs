@@ -13,22 +13,13 @@ namespace ProfiDental.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+        public IActionResult Index() => this.View();
 
         [Route("Price")]
-        public IActionResult Price()
-        {
-            return this.View("/Views/Price/Index.cshtml");
-        }
+        public IActionResult Price() => this.View();
 
         [Route("Privacy")]
-        public IActionResult Privacy()
-        {
-            return this.View("/Views/Privacy/Index.cshtml");
-        }
+        public IActionResult Privacy() => this.View();
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

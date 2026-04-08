@@ -83,6 +83,7 @@
     padding: 15px 30px;
     border-radius: 6px;
     transition: .15s;
+    cursor: pointer;
 }
 
 .consultation-btn {
