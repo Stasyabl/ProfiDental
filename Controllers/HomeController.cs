@@ -15,8 +15,8 @@ namespace ProfiDental.Controllers
 
         public IActionResult Index() => this.View();
 
-        [Route("Price")]
-        public IActionResult Price() => this.View();
+        //[Route("Price")]
+        //public IActionResult Price() => this.View();
 
         [Route("Privacy")]
         public IActionResult Privacy() => this.View();

@@ -15,8 +15,29 @@ public class ApplicationDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<ServiceType>().ToTable("service_types");
-        modelBuilder.Entity<Currency>().ToTable("currencies");
-        modelBuilder.Entity<Service>().ToTable("services");
+        modelBuilder.Entity<ServiceType>(entity =>
+        {
+            entity.ToTable("service_types");
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Name).HasColumnName("name");
+        });
+
+        modelBuilder.Entity<Currency>(entity =>
+        {
+            entity.ToTable("currencies");
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Name).HasColumnName("name");
+        });
+
+        modelBuilder.Entity<Service>(entity =>
+        {
+            entity.ToTable("services");
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Name).HasColumnName("name");
+            entity.Property(e => e.Price).HasColumnName("price");
+
+            entity.Property(e => e.CurrencyId).HasColumnName("currency_id");
+            entity.Property(e => e.ServiceTypeId).HasColumnName("service_type_id");
+        });
     }
 }

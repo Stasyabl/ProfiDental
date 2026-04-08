@@ -1,0 +1,41 @@
+﻿@model IEnumerable<ProfiDental.Models.ServiceType>
+
+@{
+    ViewData["Title"] = "Price List";
+}
+
+<section class="price__page">
+    <h1>
+        @ViewData["Title"]
+    </h1>
+
+    @foreach (var category in Model)
+    {
+        <div class="preiskurant">
+            <h3>
+                @category.Name
+            </h3>
+
+            <div class="table">
+                @foreach (var service in category.Services)
+                {
+                    <div class="prices-and-services">
+                        <p>
+                            @service.Name
+                        </p>
+                        <div class="price">
+                            <p>
+                                @service.Price
+                            </p>
+                            <p>
+                                @service.Currency?.Name
+                            </p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+
+</section>
+

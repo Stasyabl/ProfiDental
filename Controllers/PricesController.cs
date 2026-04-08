@@ -13,6 +13,7 @@ namespace ProfiDental.Controllers
             this._context = context;
         }
 
+        [Route("Price")]
         public async Task<IActionResult> Price()
         {
             var categories = await this._context.ServiceTypes.Include(st => st.Services)
